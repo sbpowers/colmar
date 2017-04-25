@@ -1,7 +1,11 @@
 html {
   font-family: Helvetica;
   font-size: 16px;
+}
+
+body {
   color: black;
+  background-color: darkslategray;
 }
 
 /*h1, h2, p, a {
@@ -64,6 +68,7 @@ html {
 .container.headline {
   justify-content: center;
   text-align: center;
+  padding-top: 1rem;
 }
 
 .information-main {
@@ -78,15 +83,30 @@ html {
   margin-right: 2rem;
 }
 
+.panel-border {
+  display: flex;
+  border-left: 1px solid gainsboro;
+  border-right: 1px solid gainsboro;
+  height: 800px;
+}
+
 .small-child {
   display: flex;
   flex-direction: column;
-  align-content: center;
-  justify-content: center;
+  align-content: flex-start;
+  justify-content: flex-start;
   /*height: 30rem;*/
   max-width: 44rem;
   /*background-color: brown;*/
   /*border: 1px solid white;*/
+}
+#orient {
+  padding-top: 42px;
+  border-bottom: 1px solid gainsboro;
+}
+
+#olly {
+  background-color: gainsboro;
 }
 
 #event, #practicing, #practice-text {
@@ -130,8 +150,10 @@ html {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  padding: 1rem auto;
-  border: 1px solid gainsboro;
+  /*margin: 1rem auto;*/
+  /*border: 1px solid gainsboro;*/
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 .stack {
@@ -158,20 +180,30 @@ html {
   padding-left: 1rem;
   justify-content: center;
   align-items: center;
-  background-color: lightblue;
-  border: 1px solid white;
+  /*background-color: lightblue;
+  border: 1px solid white;*/
 }
 
+.textbox p, a {
+  margin-right: 2rem;
+}
+
+#courses {
+  justify-content: center;
+}
 .course-info {
   height: 10rem;
   width: 18rem;
   align-content:center;
   text-align: left;
-  margin: auto 1rem;
-  background-color: purple;
-  border: 1px solid white;
+  margin: 0 1rem 1rem 1rem;
+  background-color: white;
+  /*border: 1px solid white;*/
 }
 
+.course-info h2, p {
+  /*padding-left: 1rem;*/
+}
 .imagebox {
   background-repeat: no-repeat;
   background-position: center;
@@ -180,7 +212,7 @@ html {
   height: 9.2rem;
   margin-left: 1rem;
   margin-right: 1rem;
-  border: 1px solid white;
+  /*border: 1px solid white;*/
 }
 
 #orientation {
@@ -201,7 +233,10 @@ html {
   background-size: cover;
   width: 18rem;
   height: 9rem;
-  margin: 1rem 1rem;
+  margin-top: 1 rem;
+  margin-left: 1rem;
+  margin-bottom: 0;
+  margin-right: 1rem;
   border: 1px solid white;
 }
 
