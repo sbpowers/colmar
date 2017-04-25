@@ -190,6 +190,7 @@ body {
 
 #courses {
   justify-content: center;
+  padding-bottom: 2rem;
 }
 
 
@@ -238,6 +239,14 @@ body {
   background-image: url("../images/thesis-now-and-then.jpg");
 }
 
+#thesis-exhibit {
+  background-color: white;
+}
+
+#thesis-page {
+  background-color: white;
+  padding-bottom: 2rem;
+}
 #nyc-research {
   background-color: white;
 }
@@ -249,6 +258,7 @@ body {
 #thesis.slice {
   align-self: flex-start;
   margin-left: 3rem;
+  background-color: lightgray;
 }
 
 .imagebox-wide {
@@ -293,7 +303,7 @@ body {
   flex-direction: row;
   justify-content: flex-start;
   align-items: flex-start;
-  margin-top: -178px;
+  margin-top: -170px;
 }
 video {
   margin-top: 1rem;
@@ -303,6 +313,20 @@ video {
 
 #video-description {
   margin-left: 1.5rem;
+}
+
+#footer {
+  justify-content: space-between;
+  padding-bottom: 3rem;
+  background-color: white;
+}
+
+.copyright span {
+  margin-left: 1.5rem;
+}
+
+.terms span {
+  margin-right: 1rem;
 }
 
 a, u {
