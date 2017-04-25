@@ -5,16 +5,7 @@ html {
 
 body {
   color: black;
-  background-color: darkslategray;
 }
-
-/*h1, h2, p, a {
-  letter-spacing: 1px;
-}*/
-
-/*h1, h2 {
-  font-weight: bold;
-}*/
 
 .container {
   display: flex;
@@ -24,9 +15,14 @@ body {
   align-items: center;
   height: auto;
   width: 74rem;
-  background-color: gainsboro;
-  /*border: 1px solid white;
-  color: white;*/
+}
+
+#page1 {
+  background-color: lightgray;
+}
+
+#page3, #courses {
+  background-color: lightgray;
 }
 
 #header {
@@ -44,6 +40,7 @@ body {
   color: black;
 }
 
+}
 .ColmarAcademy {
   background-color: white;
   color: black;
@@ -85,8 +82,8 @@ body {
 
 .panel-border {
   display: flex;
-  border-left: 1px solid gainsboro;
-  border-right: 1px solid gainsboro;
+  border-left: 1px solid lightgray;
+  border-right: 1px solid lightgray;
   height: 800px;
 }
 
@@ -95,18 +92,15 @@ body {
   flex-direction: column;
   align-content: flex-start;
   justify-content: flex-start;
-  /*height: 30rem;*/
   max-width: 44rem;
-  /*background-color: brown;*/
-  /*border: 1px solid white;*/
 }
 #orient {
   padding-top: 42px;
-  border-bottom: 1px solid gainsboro;
+  border-bottom: 1px solid lightgray;
 }
 
 #olly {
-  background-color: gainsboro;
+  background-color: lightgray;
 }
 
 #event, #practicing, #practice-text {
@@ -118,6 +112,8 @@ body {
   background-position: center;
   background-size: cover;
 }
+
+#event {margin-right: 2.5rem;}
 
 #practicing {
   background-image: url("../images/information-main.jpg");
@@ -142,16 +138,13 @@ body {
   /*height: 30rem;*/
   width: 21rem;
   color: darkslategray;
-  background-color: gainsboro;
-  /*border: 1px solid white;*/
+  background-color: lightgray;
 }
 
 .slice {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  /*margin: 1rem auto;*/
-  /*border: 1px solid gainsboro;*/
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
@@ -180,11 +173,9 @@ body {
   padding-left: 1rem;
   justify-content: center;
   align-items: center;
-  /*background-color: lightblue;
-  border: 1px solid white;*/
 }
 
-.textbox p, a { /* will change a bit later (below) */
+.textbox p, a { /* may change a bit later (below) */
   margin-right: 2rem;
 }
 
@@ -192,8 +183,6 @@ body {
   justify-content: center;
   padding-bottom: 2rem;
 }
-
-
 
 .course-info {
   height: 10rem;
@@ -204,7 +193,6 @@ body {
   padding-left: 1rem;
   padding-bottom: 1.5rem;
   background-color: white;
-  /*border: 1px solid white;*/
 }
 
 
@@ -216,7 +204,6 @@ body {
   height: 9.2rem;
   margin-left: 1rem;
   margin-right: 1rem;
-  /*border: 1px solid white;*/
 }
 
 #orientation {
@@ -331,8 +318,4 @@ video {
 
 a, u {
   text-decoration: none;
-}
-
-body {
-  background-color: black;
 }
