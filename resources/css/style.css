@@ -1,32 +1,64 @@
 html {
   font-family: Helvetica;
   font-size: 16px;
+  color: black;
 }
 
-h1, h2, p, a {
+/*h1, h2, p, a {
   letter-spacing: 1px;
-}
+}*/
 
-h2 {
-  font-weight: normal;
-}
-header, .container {
+/*h1, h2 {
+  font-weight: bold;
+}*/
+
+.container {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content:flex-start;
   align-items: center;
   height: auto;
   width: 74rem;
-  background-color: gray;
-  border: 1px solid white;
-  color: white;
+  background-color: gainsboro;
+  /*border: 1px solid white;
+  color: white;*/
 }
 
-header {
+#header {
+  justify-content: space-between;
+  background-color: white;
+}
+.company_header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 4rem;
+  max-width: 40%;
   background-color: white;
   color: black;
-  border: 1px solid black;
+}
+
+.ColmarAcademy {
+  background-color: white;
+  color: black;
+}
+.Test-item {
+  display: none;
+}
+
+#logo {
+  justify-content: flex-start;
+}
+
+#menu {
+  justify-content: flex-end;
+}
+
+.icon {
+  padding-left: 1.5rem;
+  height: 2rem;
 }
 
 .container.headline {
@@ -34,33 +66,72 @@ header {
   text-align: center;
 }
 
+.information-main {
+  background-color: white;
+}
+
+#menu span {
+  margin-right: 1rem;
+}
+
+#last {
+  margin-right: 2rem;
+}
+
 .small-child {
   display: flex;
   flex-direction: column;
   align-content: center;
   justify-content: center;
-  height: auto;
-  width: 35rem;
-  background-color: brown;
-  border: 1px solid white;
+  /*height: 30rem;*/
+  max-width: 44rem;
+  /*background-color: brown;*/
+  /*border: 1px solid white;*/
 }
 
-.large-child {
+#event, #practicing, #practice-text {
+  width: 44rem;
+  height: 30rem;
+  margin: 2rem 1.5rem 2rem 1.5rem;
+  background-image: url("../images/banner.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#practicing {
+  background-image: url("../images/information-main.jpg");
+}
+
+#practice-text {
+  background-image: none;
+  justify-content: flex-start;
+  height: auto;
+  color: black;
+
+}
+
+#practice-text.small-child {
+  margin-top: 0;
+}
+.right-side {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  position: static;
-  height: 450px;
-  width: 100px;
-  background-color: green;
-  border: 1px solid white;
+  align-content: center;
+  justify-content: flex-start;
+  /*height: 30rem;*/
+  width: 21rem;
+  color: darkslategray;
+  background-color: gainsboro;
+  /*border: 1px solid white;*/
 }
 
 .slice {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  padding: 1rem auto;
+  border: 1px solid gainsboro;
 }
 
 .stack {
@@ -69,7 +140,14 @@ header {
 }
 
 .button {
-  background-color: darkgray;
+  display: flex;
+  background-color: darkslategray;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  font-weight:lighter;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
   color: white;
   text-align: center;
 }
@@ -77,26 +155,78 @@ header {
 .textbox {
   height: auto;
   width: 14rem;
-  align-content:center;
-  text-align: left;
+  padding-left: 1rem;
+  justify-content: center;
+  align-items: center;
   background-color: lightblue;
   border: 1px solid white;
 }
 
 .course-info {
-  height: auto;
-  width: 22rem;
+  height: 10rem;
+  width: 18rem;
   align-content:center;
   text-align: left;
+  margin: auto 1rem;
   background-color: purple;
   border: 1px solid white;
 }
+
 .imagebox {
-  height: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   width: 9.25rem;
-  align-content:center;
-  background-color: cadetblue;
+  height: 9.2rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
   border: 1px solid white;
+}
+
+#orientation {
+  background-image: url("../images/information-orientation.jpg");
+}
+
+#campus {
+  background-image: url("../images/information-campus.jpg");
+}
+
+#guest {
+  background-image: url("../images/information-guest-lecture.jpg");
+}
+
+.imagebox-wide {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 18rem;
+  height: 9rem;
+  margin: 1rem 1rem;
+  border: 1px solid white;
+}
+
+#software {
+  background-image: url("../images/course-software.jpg");
+}
+
+#art {
+  background-image: url("../images/course-computer-art.jpg");
+}
+
+#design {
+  background-image: url("../images/course-design.jpg");
+}
+
+#data {
+  background-image: url("../images/course-data.jpg");
+}
+
+#business {
+  background-image: url("../images/course-business.jpg");
+}
+
+#marketing {
+  background-image: url("../images/course-marketing.jpg");
 }
 
 a, u {
