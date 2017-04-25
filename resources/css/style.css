@@ -184,26 +184,29 @@ body {
   border: 1px solid white;*/
 }
 
-.textbox p, a {
+.textbox p, a { /* will change a bit later (below) */
   margin-right: 2rem;
 }
 
 #courses {
   justify-content: center;
 }
+
+
+
 .course-info {
   height: 10rem;
-  width: 18rem;
+  width: 17rem;
   align-content:center;
   text-align: left;
   margin: 0 1rem 1rem 1rem;
+  padding-left: 1rem;
+  padding-bottom: 1.5rem;
   background-color: white;
   /*border: 1px solid white;*/
 }
 
-.course-info h2, p {
-  /*padding-left: 1rem;*/
-}
+
 .imagebox {
   background-repeat: no-repeat;
   background-position: center;
