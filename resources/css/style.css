@@ -149,10 +149,28 @@ body {
   padding-bottom: 1rem;
 }
 
+nav.slice.mobile {
+  display: flex;
+  align-items: center;
+  height: 4rem;
+  padding: 0rem 0rem;
+}
+
+.tab {
+  display: flex;
+  justify-content: flex-start;
+  background-color: gainsboro;
+  padding: 1rem 1rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-bottom: .5rem;
+}
+
 .stack {
   display: flex;
   flex-direction: column;
 }
+
 
 .button {
   display: flex;
@@ -165,6 +183,30 @@ body {
   padding-bottom: 1rem;
   color: white;
   text-align: center;
+}
+
+.button.mobile {
+  background-color: darkgray;
+  margin-top: 1rem;
+  margin-right: 0px;
+}
+
+.slice.mobile {
+  justify-content: space-around;
+}
+
+.dummy.mobile {
+  height: 180px;
+  background-color: darkgray;
+}
+
+.stack.mobile {
+  background-color: white;
+  padding: 2rem 1rem;
+}
+
+#learn {
+  background-color: gainsboro;
 }
 
 .textbox {
@@ -206,6 +248,11 @@ body {
   margin-right: 1rem;
 }
 
+.imagebox.mobile {
+  width: 400px;
+  height: auto;
+}
+
 #orientation {
   background-image: url("../images/information-orientation.jpg");
 }
@@ -217,6 +264,7 @@ body {
 #guest {
   background-image: url("../images/information-guest-lecture.jpg");
 }
+
 
 #FISMA {
   background-image: url("../images/thesis-fisma.jpg");
@@ -285,6 +333,25 @@ body {
   background-image: url("../images/course-marketing.jpg");
 }
 
+
+@media only screen and (max-width: 470px)
+{
+  #orientation {
+    background-image: url("../images/information-orientation-mobile.jpg");
+  }
+
+  #campus {
+    background-image: url("../images/information-campus-mobile.jpg");
+  }
+
+  #guest {
+     background-image: url("../images/information-guest-lecture-mobile.jpg");
+   }
+}
+
+
+
+
 .align-last {
   display: flex;
   flex-direction: row;
@@ -292,7 +359,8 @@ body {
   align-items: flex-start;
   margin-top: -170px;
 }
-video {
+
+#full-vid {
   margin-top: 1rem;
   margin-left: 1.5rem;
   margin-bottom: .5rem;
@@ -302,10 +370,28 @@ video {
   margin-left: 1.5rem;
 }
 
+.slice video {
+  min-width: 100%;
+  margin-top: -200%;
+}
+
+.vid {
+  display: flex;
+  flex-direction:column;
+  justify-content: flex-start;
+  max-height: 100%;
+  max-width: auto;
+}
+
 #footer {
   justify-content: space-between;
   padding-bottom: 3rem;
   background-color: white;
+}
+
+.tab.mobile.copyright {
+  background-color: white;
+  margin: 1rem 1rem;
 }
 
 .copyright span {
@@ -318,4 +404,16 @@ video {
 
 a, u {
   text-decoration: none;
+}
+
+@media only screen and (min-width: 471px) {
+  .mobile {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  .full {
+    display: none;
+  }
 }

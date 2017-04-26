@@ -7,7 +7,8 @@
     <link rel="stylesheet" href="resources/css/style.css">
   </head>
   <body>
-    <nav>
+<!-- full size navbar -->
+    <div class="full">
       <div class="container" id="header">
         <div class="company_header" id="logo">
           <div class="dummy">
@@ -19,18 +20,101 @@
           </div>
         </div>
 
-        <div class="company_header" id="menu">
+        <div class="company_header full" id="menu">
           <span class="large-screen">On campus</span>
           <span class="large-screen">Online</span>
           <span class="large-screen">For companies</span>
           <span class="large-screen" id="last">Sign in</span>
         </div>
       </div>
+    </div>
+
+<!-- mobile navbar -->
+
+    <div class="slice mobile">
+      <a href="#"><img src="resources/images/ic-logo.svg"></a>
+      <a href="#"><img src="resources/images/ic-on-campus.svg"></a>
+      <a href="#"><img src="resources/images/ic-online.svg"></a>
+      <a href="#"><img src="resources/images/ic-login.svg"></a>
+    </div>
+
+<!-- mobile site (did full-size first so this makes more sense) -->
+
+    <div class="dummy mobile">
+      <!-- need darkgray spacer div for mobile -->
+    </div>
+
+    <div class="stack mobile" id="learn">
+      <h1>Learn something new everyday</h1>
+      <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
+      <a href="#" class="button mobile">Start here</a>
+    </div>
+
+    <div class="stack mobile" id="orient">
+      <img src="resources/images/information-orientation-mobile.jpg">
+      <h2>Orientation date</h2>
+      <p>Tue 10/11 &amp Wed 10/12: 8am-3pm</p>
+      <a href="#">Read more</a>
+    </div>
+
+    <div class="stack mobile">
+      <img src="resources/images/information-campus-mobile.jpg">
+      <h2>Our campus</h2>
+      <p>Find which campus is close by you</p>
+      <a href="#">Read more</a>
+    </div>
+
+    <div class="stack mobile" id="olly">
+      <img src="resources/images/information-guest-lecture-mobile.jpg">
+      <h2>Special guest lecture</h2>
+      <p>Join a keynote with Oliver Sack about music in medical treatment</p>
+      <a href="#">Read more</a>
+    </div>
+
+    <div class="slice mobile">
+      <h1>Start learning</h1>
+    </div>
+
+    <div class="tab mobile">
+      <h2>Software Engineering</h2>
+    </div>
+
+    <div class="tab mobile">
+      <h2>Computer art</h2>
+    </div>
+
+    <div class="tab mobile">
+      <h2>Design</h2>
+    </div>
+
+    <div class="tab mobile">
+      <h2>Data</h2>
+    </div>
+
+    <div class="tab mobile">
+      <h2>Business</h2>
+    </div>
+
+    <div class="tab mobile">
+      <h2>Marketing</h2>
+    </div>
+
+    <div class="slice mobile">
+      <h1>Thesis exhibits</h1>
+    </div>
+
+    <div class="vid mobile">
+      <video style="width: 100%" src="resources/videos/thesis.mp4" autoplay controls</video>
+    </div>
+
+    <div class="tab mobile copyright">
+      <p>©2016 Colmar Academy. All rights reserved</p>
+    </div>
+
+<! -- full size site (sorta hacky but it was a great learning experience) -->
 
 
-    </nav>
-
-    <div class="container" id="page1">
+    <div class="container full" id="page1">
       <div class="small-child" id="event"></div>
 
       <div class="right-side">
@@ -41,7 +125,7 @@
     </div>
 
 
-    <div class="container information-main"  id="page2">
+    <div class="container information-main full"  id="page2">
       <div class="stack">
         <div class="small-child" id="practicing"></div>
         <div class="small-child" id="practice-text">
@@ -85,11 +169,11 @@
 
     </div>
 
-    <div class="container headline"  id="page3">
+    <div class="container headline full"  id="page3">
       <h1>Start learning</h1>
     </div>
 
-    <div class="container" id="courses">
+    <div class="container full" id="courses">
       <div class="stack">
         <div class="imagebox-wide" id="software"></div>
         <div class="course-info">
@@ -99,7 +183,7 @@
         </div>
       </div>
 
-      <div class="stack">
+      <div class="stack full">
         <div class="imagebox-wide" id="art"></div>
         <div class="course-info">
           <h2>Computer art</h2>
@@ -109,7 +193,7 @@
         </div>
       </div>
 
-      <div class="stack">
+      <div class="stack full">
         <div class="imagebox-wide" id="design"></div>
         <div class="course-info">
           <h2>Design</h2>
@@ -118,7 +202,7 @@
         </div>
       </div>
 
-      <div class="stack">
+      <div class="stack full">
         <div class="imagebox-wide" id="data"></div>
         <div class="course-info">
           <h2>Data</h2>
@@ -127,7 +211,7 @@
         </div>
       </div>
 
-      <div class="stack">
+      <div class="stack full">
         <div class="imagebox-wide" id="business"></div>
         <div class="course-info">
           <h2>Business</h2>
@@ -136,7 +220,7 @@
         </div>
       </div>
 
-      <div class="stack">
+      <div class="stack full">
         <div class="imagebox-wide" id="marketing"></div>
         <div class="course-info">
           <h2>Marketing</h2>
@@ -146,14 +230,14 @@
       </div>
     </div>
 
-    <div class="container headline" id="thesis-exhibit">
+    <div class="container headline full" id="thesis-exhibit">
       <h1>Thesis exhibit</h1>
     </div>
 
-    <div class="container" id="thesis-page">
+    <div class="container full" id="thesis-page">
       <div class="stack">
         <div class="small-child">
-          <video width="704" controls>
+          <video id="full-vid" width="704" controls autoplay>
             <source src="resources/videos/thesis.mp4" type="video/mp4">
           </video>
         </div>
@@ -166,7 +250,7 @@
         </div>
       </div>
 
-      <div class="align-last">
+      <div class="align-last full">
         <div class="small-child">
           <div class="slice" id="thesis">
             <div class="imagebox" id="FISMA"></div>
@@ -187,7 +271,7 @@
 
     </div>
 
-    <div class="container" id="footer">
+    <div class="container full" id="footer">
       <div class="copyright">
         <span>© 2016 Colmar Academy. All rights reserved</span>
       </div>
